@@ -124,7 +124,7 @@
         
         function TicketPriceChange(ticketClass, isIncrease){
 
-            const ticketPriceCount = getInputValue(ticketClass)
+            const ticketPriceCount = getInputValue(ticketClass);
 
             let ticketNewPriceCount = ticketPriceCount;
             if(isIncrease == true){
@@ -156,8 +156,8 @@
 
 
         function calculateTotal(){
-            const firstClassCount = getInputValue('firstClass')
-            const economyCount = getInputValue('economy')
+            const firstClassCount = getInputValue('firstClass');
+            const economyCount = getInputValue('economy');
            
 
             const totalPrice = firstClassCount*150 + economyCount*100;
