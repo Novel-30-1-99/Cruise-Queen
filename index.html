@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="bookNow-btn" class="btn-style">Book Now</button>
         </div>
     </main>
 
@@ -176,7 +176,13 @@
             const ticketClassCount = parseInt(ticketClassInput.value);  
           
             return ticketClassCount;
-        }    
+        }
+
+        const buttonElement = document.getElementById('bookNow-btn');
+        buttonElement.addEventListener('click', function (event) {
+        alert('You have successfully purchase your ticket. Enjoy your journey with us');
+        });  
+
     </script>
 
 
